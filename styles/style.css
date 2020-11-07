@@ -1,31 +1,299 @@
 .page {
   min-width: 1100px;
-  /* мы ещё не умеем делать мобильную версию сайта, */
-  /* поэтому выше установлена минимальная ширина страницы */
   max-width: 1600px;
-  /* выше установили ограничение по максимальной ширине */
   margin: 0 auto;
-  /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
+    
+/*.page, div, img, h1, h2, h3, p, section, a {
+    border: 1px solid red;
+}*/
 
 .header {
+  display: flex;
+  position: relative;
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
-  /* выше установили ограничения для секции */
+  background-color: #f2f2f2;
+  padding-left: 64px;
 }
 
-/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
+.logo {
+  width: 183px;
+}
+
+.logo_place_header {
+  height: 32px;
+  position: absolute;
+  top: 30px;
+  z-index: 2;
+}
+
+.header__title {
+  width: 730px;
+  align-self: center;
+  font-size: 102px;
+  line-height: 96px;
+  font-weight: bold;
+}
+
+.header__subtitle {
+  width: 388px;
+  position: absolute;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 25px;
+  bottom: 30px;
+  z-index: 2;
+}
+
+.header__main-illustration {
+  background-size: cover;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  width: 765px;
+  height: 608px;
+  z-index: 1;
+}
+
+.description {
+  background-color: white;
+  color: #1f1f1f;
+}
+
 .header__square-pic {
-  height: 568px;
   width: 568px;
+  height: 568px;
+  background-color: #2f80ed;
+  position: absolute;
+  top: 64px;
+  right: 0;
 }
 
-/* и элемента с модификатором вида ключ-значение */
+.header__subtitle-link {
+  color: #2f80ed;
+  text-decoration: none;
+}
+
+.two-columns {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 100px auto;
+}
+
+.two-columns__brief {
+  width: 175px;
+  color: #2f80ed;
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: normal;
+  margin: 0px;
+}
+
+.two-columns__main-text {
+  width: 80%;
+}
+
+.two-columns__paragraph {
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 34px;
+  margin: 0px;
+}
+
+.two-columns__paragraph:nth-child(2) {
+  margin: 30px 0px;
+}
+
+.two-columns__span-accent {
+  font-weight: bold;
+}
+
+.digits {
+  padding: 100px 0px;
+  background-color: white;
+  color: #1f1f1f;
+}
+
+.section-title {
+  width: 60%;
+  margin: auto;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 60px;
+  line-height: 1.15;
+  font-weight: bold;
+}
+
+.section-subtitle {
+  width: 60%;
+  margin: auto;
+  text-align: center;
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: normal;
+}
+
+.table {
+  margin: auto;
+  width: 1100px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.table__cell {
+  width: 250px;
+  margin-top: 60px;
+}
+
+.table__heading {
+  font-size: 24px;
+  line-height: 1.15;
+  font-weight: bold;
+  margin: 0px;
+}
+
+.table__text {
+  margin: 20px 0 0 0;
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: normal;
+}
+.feynman {
+  padding-top: 100px;
+  height: 790px;
+  background: url("../images/feynman.png") left bottom / 867px 637px no-repeat #f2f2f2;
+  position: relative;
+}
+
+.feynman__title {
+  width: 648px;
+  text-align: center;
+  margin: auto;
+  line-height: 1.15;
+  font-weight: bold;
+  font-size: 120px;
+}
+
+.feynman__subtitle {
+  width: 365px;
+  text-align: center;
+  margin: 70px auto auto;
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+}
+
+.feynman__link {
+  text-decoration: none;
+  color: #2f80ed;
+  position: absolute;
+  top: 50%;
+  right: 48px;
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+}
+
+.kaufman {
+  padding: 90px 0;
+  background-color: #1f1f1f;
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.section-title_theme_dark {
+  color: white;
+  position: relative;
+  z-index: 1;
+}
+
+.section-subtitle_theme_dark {
+  color: white;
+  position: relative;
+  z-index: 1;
+}
+
+.kaufman__triangle {
+  width: 877px;
+  height: 877px;
+  position: absolute;
+  background-image: url(../images/kaufman-triangle.svg);
+  background-size: cover;
+  top: 0;
+  right: -210px;
+}
+
 .table__cell_theme_dark {
   width: 200px;
   color: white;
   margin-right: 0;
   margin-top: 80px;
+  position: relative;
+  z-index: 1;
 }
+
+.footer {
+  background-color: #1f1f1f;
+  color: #f2f2f2;
+  padding: 60px 0 40px;
+}
+
+.footer__columns {
+  margin: auto;
+  min-height: 250px;/* как по другому добиться min-height: 350; не знаю так + padding какраз 350 и будет*/ 
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.footer__content_copyright {
+  flex-basis: 711px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer__author {
+  margin: 18px 0px;
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.footer__column-heading {
+  margin: 0px;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.footer__column-links {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0px 16px;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.footer__link {
+  text-decoration: none;
+  color: white;
+}
+
+.logo-img {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+}
+
+/* восстанавливал работу из ошметков кода из браузера, мог что-то упустить*/
