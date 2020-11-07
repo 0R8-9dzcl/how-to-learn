@@ -247,7 +247,7 @@
 
 .footer__columns {
   margin: auto;
-  min-height: 250px;/* как по другому добиться min-height: 350; не знаю так + padding какраз 350 и будет*/ 
+  min-height: 250px;/* как по другому добиться min-height: 350; не знаю так + padding какраз 350 и будет*/
   width: 90%;
   display: flex;
   justify-content: space-between;
@@ -282,7 +282,6 @@
   line-height: 30px;
   font-size: 18px;
   font-weight: normal;
-  margin: 0;
 }
 
 .footer__link {
