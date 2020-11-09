@@ -293,7 +293,7 @@
 .footer__column_content_social {
   flex-direction: column;
   justify-content: start;
-  max-width: max-content; 
+  max-width: max-content;
   margin: 0;
 }
 
@@ -327,3 +327,4 @@
   height: 16px;
   margin-right: 10px;
 }
+/* надеюсь я переписывая не допустил большего колличесива ошибок*/
