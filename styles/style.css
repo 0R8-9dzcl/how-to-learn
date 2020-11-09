@@ -4,9 +4,9 @@
   margin: 0 auto;
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
-    
-/*.page, div, img, h1, h2, h3, p, section, a {
-    border: 1px solid red;
+
+/*div, h1, h3, p, footer, li, ul, span, nav {
+  border: 1px solid red;
 }*/
 
 .header {
@@ -60,7 +60,6 @@
 
 .header__link:hover { 
   color: gray;
-  text-decoration: underline;
 }
 
 .header__main-illustration {
@@ -212,7 +211,7 @@
 }
 
 .feynman__link:hover {
-  text-decoration: underline;
+  color: gray;
 }
 
 .kaufman {
@@ -258,19 +257,23 @@
 }
 
 .footer__columns {
-  margin: auto;
-  min-height: 250px;/* как по другому добиться min-height: 350; не знаю так + padding какраз 350 и будет*/
   width: 90%;
+  min-height: 250px;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
+  margin: auto;
 }
 
 .footer__column_content_copyright {
   flex-basis: 711px;
-  display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin: 0;
+}
+
+.logo_place_footer {
+  height: 35px;
 }
 
 .footer__author {
@@ -280,15 +283,29 @@
   font-weight: normal;
 }
 
+.footer__column_content_info {
+  max-width: max-content;
+  flex-direction: column;
+  justify-content: start;
+  margin: 0;
+}
+
+.footer__column_content_social {
+  flex-direction: column;
+  justify-content: start;
+  max-width: max-content; 
+  margin: 0;
+}
+
 .footer__column-heading {
-  margin: 0px;
+  margin: 0;
   line-height: 30px;
   font-size: 18px;
   font-weight: bold;
 }
 
 .footer__column-links {
-  margin: 20px 0px 16px;
+  margin: 20px 0 16px;
   line-height: 30px;
   font-size: 18px;
   font-weight: normal;
@@ -310,5 +327,3 @@
   height: 16px;
   margin-right: 10px;
 }
-
-/* надеюсь всё исправил, спасибо за ваши комментарии*/
