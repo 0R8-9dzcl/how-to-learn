@@ -1,0 +1,5 @@
+.video__iframe {
+  max-width: max-content;
+  list-style: none;
+  height: 256px;
+}

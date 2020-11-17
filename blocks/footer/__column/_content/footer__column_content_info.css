@@ -1,0 +1,5 @@
+.footer__column_content_info {
+  max-width: max-content;
+  flex-direction: column;
+  justify-content: start;
+}
