@@ -1,9 +1,4 @@
 .video__iframe {
-  max-width: max-content;
-  list-style: none;
-  height: 256px;
-}
-
-.video__iframe:nth-child(2n) {
-  margin-left: 20px;
+  width: 515px;
+  height: 316px;
 }

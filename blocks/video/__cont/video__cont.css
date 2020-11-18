@@ -1,0 +1,8 @@
+.video__cont {
+  padding: 0;
+  list-style: none;
+}
+
+.video__cont:nth-child(2n) {
+  margin-left: 20px;
+}
